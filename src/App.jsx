@@ -3,7 +3,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import UserDashboard from './pages/UserDashboard';
-import AdminDashboard from './pages/AdminDashboard';
+import AdminDashboard from './pages/AdminDashboard'; // Ensure this file exists
 import AboutUs from './pages/AboutUs';
 import HelpPage from './pages/HelpPage';
 import BorrowedBooks from './pages/BorrowedBooks';
@@ -14,7 +14,7 @@ import BooksOnSale from './pages/BooksOnSale';
 const App = () => (
   <Routes>
     <Route path="/" element={<LandingPage />} />
-    <Route path="/admin" element={<AdminDashboard />} />
+    <Route path="/admin" element={<AdminDashboard />} /> {/* Check for AdminDashboard.jsx */}
     <Route path="/user" element={<UserDashboard />} />
     <Route path="/user/borrowed-books" element={<BorrowedBooks />} />
     <Route path="/user/purchased-books" element={<PurchasedBooks />} />
